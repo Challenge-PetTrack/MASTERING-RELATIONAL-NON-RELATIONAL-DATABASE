@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="46BBCFBA-FE7D-A721-DC0A-38B71E86EC85" name="TB_TUTOR">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:01:48 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_TUTOR" id="72476F5B-B669-1264-9547-1A67A5FA8BF4">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:02:39 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_TUTOR" id="A196E95C-47C3-8728-CBF6-D0C5A2766DCD">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:03:10 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_EMAIL" id="AF01A60A-03CE-563C-8610-B91D8849C1CF">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:03:34 UTC</createdTime>
+<notes><![CDATA[LOGIN DO APP]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<constraintName>UK_TUTOR_EMAIL</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_TELEFONE" id="84C88A14-02F0-1110-D23D-88C3C9C3B44C">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:10:05 UTC</createdTime>
+<notes><![CDATA[WHATSAPP PARA NOTIFICAÇÃO]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_ENDERECO" id="8DB9BE70-A997-2C38-F262-5DC7E4584E1B">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:11:09 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CADASTRO" id="5DDF9C3A-BBFE-C7A3-2632-81DFED93550E">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:11:31 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EEBF6A18-BA0D-0DDD-2EC0-32701A2362A3" name="TB_TUTOR PK">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:03:06 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>72476F5B-B669-1264-9547-1A67A5FA8BF4</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="CAF811B0-1D04-EB93-C825-B290C4F613A1" name="UK_TUTOR_EMAIL">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:07:27 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="false"/>
+</engineerTo>
+<newElementsIDs>AF01A60A-03CE-563C-8610-B91D8849C1CF</newElementsIDs>
+<usedAttributes>
+<attributeRef>AF01A60A-03CE-563C-8610-B91D8849C1CF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

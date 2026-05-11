@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E800948-3A10-E363-10E7-81FF1532BDCF" name="TB_LOG_ERRO">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>E6B17E63-B104-D4FC-7957-D5531361DFF9</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_LOG" id="97B8C217-0CB3-D1FA-CA67-0D00F6C80D7F">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>CE2393E6-A9BB-302C-D8FA-7C37ECF0856D</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_PROCEDURE" id="ABBE2985-BC7F-1FDC-8957-402D9CC0E4FF">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>42F77D80-498F-C41D-B03F-88B59A5A14D6</generatorID>
+<notes><![CDATA[NOME PROCEDURE QUE FALOU]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_USUARIO" id="B4F618AB-8342-15FD-3DE9-94FC624712FD">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>56C6D9E7-FE78-C9B5-BEB0-9CEC4F6190B3</generatorID>
+<notes><![CDATA[USER DO ORACLE]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_OCORRENCIA" id="48025846-C0B9-63F0-8803-36E49715E73F">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>9139D5E4-1870-F75D-B926-E92E97774B4E</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_ERRO" id="2B02FF9A-8FEB-C841-8FEC-1536649D9F85">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>F28BC12F-6DFB-1BA3-61A5-E1CA989072B3</generatorID>
+<notes><![CDATA[SQLCODE]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_MENSAGEM" id="70FD00CB-7EEC-E25B-DEF5-196CB8D61FC1">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>A46D061E-129F-AFE1-B653-4C9243084A44</generatorID>
+<notes><![CDATA[SQLERRM]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="59DB49BF-1796-9334-C252-45EFA78FB517" name="TB_LOG_ERRO_PK">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>EEB4274A-4DA4-9158-58F0-131269645179</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97B8C217-0CB3-D1FA-CA67-0D00F6C80D7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EF3D07C3-E61B-62EF-35E9-A1C65FCEF1A0" name="TB_COLLAR_LEITURA">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>B18F2279-0840-8A62-BFE9-2C19EA810F3B</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_LEITURA" id="52D9730B-DF30-69F5-62E3-3CDD2A838A08">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>B4EDB462-E0F4-D9BA-CDAF-8166B0704C2E</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_TEMPERATURA" id="A7C98EA8-4E58-9238-BB64-330110DF3C90">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>96A4CBDC-78B2-1D24-BA8D-C83173E7026F</generatorID>
+<notes><![CDATA[VALORES POSSIVEIS ENTRE 30-45 EM Cº]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_ATIVIDADE" id="AC851261-A84C-3850-7CC3-5C3E4CEF82A5">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>1A1012D0-8467-EEB4-CB7E-AF967CB77E4E</generatorID>
+<notes><![CDATA[PASSOS OU MOVIMENTOS]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_LEITURA" id="64F8B950-B8CB-6E67-141E-DBE144695C98">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>C219EEF1-FB13-CE8F-BA9A-1FFA16654642</generatorID>
+<notes><![CDATA[TIMESTAMP DO MQTT]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_TOPICO_MQTT" id="125B83CA-45B1-BC0F-3D56-BC6002867FC2">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>55BA9A74-1495-DEA4-A6B1-CDA6FF2CDD54</generatorID>
+<notes><![CDATA[PETTRACK/COLLAR/PET1...]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PET" id="59CE5D67-A61B-646D-6FFA-37A0435CF72A">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-05 02:44:31 UTC</createdTime>
+<generatorID>8FE67035-5F33-B020-769E-B63D006D068E</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="33FA1B64-B8EA-CF55-6367-89A04CFC15B2" referredColumn="E3CAB171-DDF0-476C-8932-EBC2514804E9"/>
+</associations>
+</Column>
+<Column name="ID_TUTOR" id="13AC30AD-11B1-5379-4102-49E818D08995">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-05 02:44:46 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="33FA1B64-B8EA-CF55-6367-89A04CFC15B2" referredColumn="85036129-CECE-BB74-AAC2-7AA64EC8C7F3"/>
+</associations>
+</Column>
+<Column name="ID_CLINICA" id="9CC10A06-4CD0-1AAC-5D1F-62B1F6D67F2C">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-05 02:44:46 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="33FA1B64-B8EA-CF55-6367-89A04CFC15B2" referredColumn="957330F0-28F9-E153-4C29-57C502341F8E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B2DA4E99-8C6E-DF88-B10A-E60633E3002C" name="TB_COLLAR_LEITURA_PK">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>1E188400-2FD8-CC10-3040-BDA8AF48A870</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52D9730B-DF30-69F5-62E3-3CDD2A838A08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1FC951DC-836D-4E7E-9588-45D17CAF37F1" name="Relation_22">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-05 02:44:31 UTC</createdTime>
+<generatorID>D33EC429-88EC-72F7-E029-9595029D57F2</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59CE5D67-A61B-646D-6FFA-37A0435CF72A"/>
+<colUsage columnID="13AC30AD-11B1-5379-4102-49E818D08995"/>
+<colUsage columnID="9CC10A06-4CD0-1AAC-5D1F-62B1F6D67F2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

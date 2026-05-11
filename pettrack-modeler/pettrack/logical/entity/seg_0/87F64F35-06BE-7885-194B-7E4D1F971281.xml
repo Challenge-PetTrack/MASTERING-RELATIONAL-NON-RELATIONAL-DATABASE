@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="87F64F35-06BE-7885-194B-7E4D1F971281" name="TB_NOTIFICACAO">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 21:57:37 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_NOTIFICACAO" id="F589D415-D547-4584-5C15-AF0C637957F5">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 22:00:36 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_NOTIFICACAO" id="46C1470C-A7A8-B839-53C2-41C4863300D3">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 22:00:48 UTC</createdTime>
+<notes><![CDATA[VALORES PERMITIDOS: ALERTA, LEMBRETE, INFO, URGENTE]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="ALERTA" description=""/>
+<valueDef value="INFO" description=""/>
+<valueDef value="LEMBRETE" description=""/>
+<valueDef value="URGENTE" description=""/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_TITULO" id="B1039352-C257-74D6-1259-EE3E458C79CE">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 22:01:47 UTC</createdTime>
+<notes><![CDATA[TITULO DO PUSH]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_MENSAGEM" id="E820ECA2-BC1A-63B7-7399-76101DB6D3CC">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 22:02:13 UTC</createdTime>
+<notes><![CDATA[CORPO DA MENSAGEM]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_ENVIO" id="3B20139C-0398-2317-BEE3-9EB24EB5B650">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 22:02:36 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_LIDA" id="E15D1AA6-4FF4-4A7D-63F2-E53B5B5D7436">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 22:03:05 UTC</createdTime>
+<notes><![CDATA[VALORES VALIDOS: S OU N]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_TUTOR" id="E481E630-E690-5190-64C7-F4BF166CEB87">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:29:45 UTC</createdTime>
+<generatorID>3A40AF58-FD4C-7602-EF57-23AA63FB855F</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<referedAttribute>72476F5B-B669-1264-9547-1A67A5FA8BF4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PET" id="382EAF9D-24CB-1025-DBE9-B96FA2D67220">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:29:55 UTC</createdTime>
+<generatorID>47BE47BB-FEBC-ACD3-C84F-58181E63612B</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<referedAttribute>CA7D4AE3-A6E4-2250-AD7F-9ADA40D2C0C8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D267781F-CE33-B88D-E921-0BB94C02707E" name="TB_NOTIFICACAO PK">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 22:00:46 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F589D415-D547-4584-5C15-AF0C637957F5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

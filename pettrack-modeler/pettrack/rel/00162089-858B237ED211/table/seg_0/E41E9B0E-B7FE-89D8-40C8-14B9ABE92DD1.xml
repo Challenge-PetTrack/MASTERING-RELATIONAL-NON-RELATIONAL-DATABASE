@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E41E9B0E-B7FE-89D8-40C8-14B9ABE92DD1" name="TB_PROTOCOLO_PREVENTIVO">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>81F27E86-03F9-429D-BE55-EDF82FE77D52</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PROTOCOLO" id="537C2EEE-164B-6DBE-BF81-608C797B9D04">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>55317596-CA1B-5F69-DF62-66F508F6FD8A</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_PROTOCOLO" id="12C89D15-D186-37E6-8614-FABDC9231B77">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>294C969B-20F0-AB75-13C8-16DAE3F8D211</generatorID>
+<notes><![CDATA[TIPOS VALIDOS: VACINA, VERMIFUGO, CHECKUP, ANTIPULGA]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="ANTIPULGA" description=""/>
+<valueDef value="CHECKUP" description=""/>
+<valueDef value="VACINA" description=""/>
+<valueDef value="VERMIFUGO" description=""/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_PROTOCOLO" id="EFC28740-8EFB-1DEF-C211-4122E9D8098E">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[V10, ANTIRRÁBICA...]]></commentInRDBMS>
+<generatorID>3ED22CA2-B21E-A144-E981-3BFE0F9BE524</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_APLICACAO" id="FCA4C185-2366-2E55-4DCB-7DD87D88B86E">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>BD3EA9EF-7C41-03E7-9A2F-EF687C2E22E4</generatorID>
+<notes><![CDATA[QUANDO FOI FEITO]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_PROXIMA" id="0CB230AD-3D4E-3B82-AC54-33093AB5BB9E">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>E61905FF-AC5B-5B08-2049-E01AAA7C32A8</generatorID>
+<notes><![CDATA[QUANDO DEVE REPETIR]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_STATUS" id="7C72E73F-5B0B-E222-C425-DBE5543C7DF2">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>782B4346-F0B1-99E5-CCEA-8C9F5C5A67B9</generatorID>
+<notes><![CDATA[VALORES VALIDOS: PENDENTE, REALIZADO, ATRASADO]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="ATRASADO" description=""/>
+<valueDef value="PENDENTE" description=""/>
+<valueDef value="REALIZADO" description=""/>
+</listOfValues>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PET" id="7CE58237-694C-B72F-19A4-47544DB17AA3">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>DA0CA17B-077A-A67E-DEC5-827F10267CA6</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D330DC6D-445F-064B-1CA7-1E57D6140E64" referredColumn="E3CAB171-DDF0-476C-8932-EBC2514804E9"/>
+</associations>
+</Column>
+<Column name="ID_TUTOR" id="3B4925F9-20CC-48E4-CFBB-89ECBEAE300C">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>0AA41555-44A1-1C1C-9E78-800AEEDEDA85</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D330DC6D-445F-064B-1CA7-1E57D6140E64" referredColumn="85036129-CECE-BB74-AAC2-7AA64EC8C7F3"/>
+</associations>
+</Column>
+<Column name="ID_CLINICA" id="3B4A3B01-A5BC-DD9A-913F-6A0F388A9963">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>A969B6C6-3932-CDBC-A4E7-A0D1FF4FC007</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D330DC6D-445F-064B-1CA7-1E57D6140E64" referredColumn="957330F0-28F9-E153-4C29-57C502341F8E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D38CB732-7EA1-0733-6E2B-B8B2C92CCF4C" name="TB_PROTOCOLO_PREVENTIVO_PK">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>77EEF93B-5452-3FFE-E290-FE05917D3966</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="537C2EEE-164B-6DBE-BF81-608C797B9D04"/>
+<colUsage columnID="7CE58237-694C-B72F-19A4-47544DB17AA3"/>
+<colUsage columnID="3B4925F9-20CC-48E4-CFBB-89ECBEAE300C"/>
+<colUsage columnID="3B4A3B01-A5BC-DD9A-913F-6A0F388A9963"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04016381-7C43-2D31-3DA1-D4C8801218AF" name="Relation_7">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>EA75712F-B99E-3791-CB42-4D045C4BB4FE</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CE58237-694C-B72F-19A4-47544DB17AA3"/>
+<colUsage columnID="3B4925F9-20CC-48E4-CFBB-89ECBEAE300C"/>
+<colUsage columnID="3B4A3B01-A5BC-DD9A-913F-6A0F388A9963"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

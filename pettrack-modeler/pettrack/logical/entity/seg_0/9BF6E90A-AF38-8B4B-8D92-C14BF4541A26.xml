@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9BF6E90A-AF38-8B4B-8D92-C14BF4541A26" name="TB_MEDICAMENTO">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:24:52 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_MEDICAMENTO" id="71AD2867-4FCE-5EBA-BA55-52DFEC0FEDEC">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:25:01 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_MEDICAMENTO" id="A91315FA-8574-2CAD-8152-C485B53C5CDD">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:26:45 UTC</createdTime>
+<notes><![CDATA[EX: APOQUEL 16MG...]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_DOSAGEM" id="A3130878-53A2-DE48-E95B-4777D0BF0D0E">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:27:21 UTC</createdTime>
+<notes><![CDATA[EX: 1 COMPRIMIDO]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_FREQUENCIA" id="0474FE41-C293-4B3C-B343-C71777BED900">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:28:21 UTC</createdTime>
+<notes><![CDATA[EX: 1X NO DIA]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_INICIO" id="07A4B08A-2799-E674-9C0E-9557D1E1397D">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:28:43 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_FIM" id="BE4782DC-B09F-3E85-BB1F-64BF607EF8AA">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:28:55 UTC</createdTime>
+<notes><![CDATA[PODE SER CONTINUO]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_EVENTO" id="8BBE4CC6-3C0B-1961-12CA-B3A05D1BA20A">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-05 01:19:29 UTC</createdTime>
+<generatorID>3E1F9184-ECCE-EC8A-F81D-815620103642</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<referedAttribute>980C905A-FC1B-E42C-B938-BA3E182C731D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="92A590E6-DAC5-1244-0797-82D15B93BAB6" name="TB_MEDICAMENTO PK">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:26:38 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>71AD2867-4FCE-5EBA-BA55-52DFEC0FEDEC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2D553132-4ABC-EE04-29EE-1A28D50E4BD9" name="TB_CLINICA">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:11:45 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_CLINICA" id="AFB26535-E0B1-0D8F-EC43-3E8E31878300">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:11:51 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_CLINICA" id="8E0CC637-ADF4-3F37-2451-1AFACF6C94D3">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:12:09 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CNPJ" id="B05272DE-EF62-99A6-7CFC-DC321F9AE9B8">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:12:35 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<constraintName>UK_CLINICA_CNPJ</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18</dataTypeSize>
+<ownDataTypeParameters>18,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_EMAIL" id="4E7B63B3-3DC4-14BA-FB0C-2DC1465D80EC">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:13:47 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_ENDERECO" id="EFD31483-76EF-057B-49AF-C7DC7CE0B7F5">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:14:05 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CADASTRO" id="C03240E1-177F-2FF7-52E8-A5AF41C20BE4">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:14:27 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D4266CAE-AC27-591F-075A-74514D217FD8" name="TB_CLINICA PK">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:12:08 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AFB26535-E0B1-0D8F-EC43-3E8E31878300</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="561AD647-0FB4-9FDB-D0D5-79578B38AC1D" name="UK_CLINICA_CNPJ">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 20:13:25 UTC</createdTime>
+<ownerDesignName>PET</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="false"/>
+</engineerTo>
+<newElementsIDs>B05272DE-EF62-99A6-7CFC-DC321F9AE9B8</newElementsIDs>
+<usedAttributes>
+<attributeRef>B05272DE-EF62-99A6-7CFC-DC321F9AE9B8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

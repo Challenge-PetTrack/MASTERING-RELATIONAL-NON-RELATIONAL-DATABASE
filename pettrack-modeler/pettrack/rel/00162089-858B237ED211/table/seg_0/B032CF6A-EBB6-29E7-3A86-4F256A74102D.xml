@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B032CF6A-EBB6-29E7-3A86-4F256A74102D" name="TB_TUTOR">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>46BBCFBA-FE7D-A721-DC0A-38B71E86EC85</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TUTOR" id="CD010A91-108D-E29F-53D2-E71D4D5620BC">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>72476F5B-B669-1264-9547-1A67A5FA8BF4</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_TUTOR" id="72A940F0-3E9E-F128-BF97-05EE17F25C83">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>A196E95C-47C3-8728-CBF6-D0C5A2766DCD</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_EMAIL" id="8A1DD00E-E098-C8E0-3B0B-112D60C372F7">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>AF01A60A-03CE-563C-8610-B91D8849C1CF</generatorID>
+<notes><![CDATA[LOGIN DO APP]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<constraintName>UK_TUTOR_EMAIL</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_TELEFONE" id="ADE7AE17-BD72-EC5F-C433-29F568806569">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>84C88A14-02F0-1110-D23D-88C3C9C3B44C</generatorID>
+<notes><![CDATA[WHATSAPP PARA NOTIFICAÇÃO]]></notes>
+<ownerDesignName>PET</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_ENDERECO" id="F08332E2-3D8E-D7CD-DB70-DF973F704F4C">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>8DB9BE70-A997-2C38-F262-5DC7E4584E1B</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CADASTRO" id="23BBB502-4F37-55BE-680F-4929F4AA9DA0">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>5DDF9C3A-BBFE-C7A3-2632-81DFED93550E</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B91E9D31-FDE4-5998-BC56-41D0EDBC5D8F" name="TB_TUTOR_PK">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>EEBF6A18-BA0D-0DDD-2EC0-32701A2362A3</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD010A91-108D-E29F-53D2-E71D4D5620BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="346DFA7A-31CB-B6B8-7F28-DD0EA0EFA882" name="TB_TUTOR_DS_EMAIL_UN">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-04 23:36:29 UTC</createdTime>
+<generatorID>CAF811B0-1D04-EB93-C825-B290C4F613A1</generatorID>
+<ownerDesignName>PET</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A1DD00E-E098-C8E0-3B0B-112D60C372F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

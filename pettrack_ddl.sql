@@ -5,7 +5,7 @@
 -- Gabriel Sbrana Campos     - RM 565849
 -- Moises Waidemann          - RM 563719
 -- Thiago Rodrigues da Mota  - RM 563765
--- Richard Freitas
+-- Richard Freitas           - RM 566127
 -- ============================
 
 -- ============================

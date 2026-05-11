@@ -154,15 +154,14 @@ Senha:    [sua senha FIAP]
 
 ---
 
-## 👥 Integrantes
+## Integrantes
 
-> Adicione os nomes em ordem alfabética conforme exigido na folha de rosto da entrega.
-
-| Nome | RM |
-|---|---|
-| ... | ... |
-| ... | ... |
-| ... | ... |
+Nome | RM
+--- | ---
+Gabriel Sbrana Campos | 565849
+Moisés Waidemann Molinillo Júnior | 563719
+Richard Freitas | 566127
+Thiago Rodrigues da Mota | 563650
 
 ---
 

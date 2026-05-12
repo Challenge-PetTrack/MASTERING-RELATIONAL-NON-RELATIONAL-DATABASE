@@ -3,7 +3,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>2D553132-4ABC-EE04-29EE-1A28D50E4BD9</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -12,7 +12,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>AFB26535-E0B1-0D8F-EC43-3E8E31878300</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -23,7 +23,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>8E0CC637-ADF4-3F37-2451-1AFACF6C94D3</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -35,7 +35,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>B05272DE-EF62-99A6-7CFC-DC321F9AE9B8</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <constraintName>UK_CLINICA_CNPJ</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -48,7 +48,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>4E7B63B3-3DC4-14BA-FB0C-2DC1465D80EC</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -61,7 +61,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>EFD31483-76EF-057B-49AF-C7DC7CE0B7F5</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -70,16 +70,18 @@
 <ownDataTypeParameters>300,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="DT_CADASTRO" id="FF4C1A41-3BDD-B378-C9F7-84E17BFA4D23">
+<Column name="NR_TELEFONE" id="FF4C1A41-3BDD-B378-C9F7-84E17BFA4D23">
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>C03240E1-177F-2FF7-52E8-A5AF41C20BE4</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
 <defaultValue>SYSDATE</defaultValue>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
@@ -88,7 +90,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>D4266CAE-AC27-591F-075A-74514D217FD8</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -100,7 +102,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>561AD647-0FB4-9FDB-D0D5-79578B38AC1D</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

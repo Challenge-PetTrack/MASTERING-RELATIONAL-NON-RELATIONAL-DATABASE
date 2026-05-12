@@ -3,7 +3,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>AF6DEB8D-E1EA-C475-E510-7FE832778EB3</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -12,7 +12,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>980C905A-FC1B-E42C-B938-BA3E182C731D</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -24,7 +24,7 @@
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>B5B8E292-D6CD-CC11-6FE8-9845AFEF2514</generatorID>
 <notes><![CDATA[VALORES PERMITIDOS: CONSULTA, CIRURGIA, RETORNO, EXAME]]></notes>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -42,7 +42,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>E72C90C5-E48E-4DDE-ADEF-73D34FF5715E</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -53,7 +53,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>F799EA9F-B00D-5D75-AC0F-326BF2FA30D6</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -66,7 +66,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>31A9A2FC-4FFD-B1E5-6938-C624FB6654DE</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -79,7 +79,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-05 01:20:26 UTC</createdTime>
 <generatorID>4D563524-0003-80CD-C1A8-CE491F271242</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -90,11 +90,11 @@
 <colAssociation fkAssociation="8D35A3C4-2B37-D589-F48B-96ABF30E9F60" referredColumn="E3CAB171-DDF0-476C-8932-EBC2514804E9"/>
 </associations>
 </Column>
-<Column name="ID_CLINICA2" id="4841EE58-870E-191D-1661-D83417723E64">
+<Column name="ID_CLINICA" id="4841EE58-870E-191D-1661-D83417723E64">
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-05 01:20:26 UTC</createdTime>
 <generatorID>3648D261-79C8-007F-B201-3B82BA5263D4</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -105,41 +105,13 @@
 <colAssociation fkAssociation="9B67AB9E-2471-0F38-430F-D012DC0AD61C" referredColumn="7E7C1D19-9576-F228-9895-B5A3C0733484"/>
 </associations>
 </Column>
-<Column name="ID_TUTOR" id="1D678A79-9259-870E-2625-336067052968">
-<createdBy>waidemannn_m</createdBy>
-<createdTime>2026-05-05 01:27:38 UTC</createdTime>
-<ownerDesignName>PET</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="8D35A3C4-2B37-D589-F48B-96ABF30E9F60" referredColumn="85036129-CECE-BB74-AAC2-7AA64EC8C7F3"/>
-</associations>
-</Column>
-<Column name="ID_CLINICA" id="48F08502-3982-AF90-2CDE-426AAD38799C">
-<createdBy>waidemannn_m</createdBy>
-<createdTime>2026-05-05 01:27:38 UTC</createdTime>
-<ownerDesignName>PET</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="8D35A3C4-2B37-D589-F48B-96ABF30E9F60" referredColumn="957330F0-28F9-E153-4C29-57C502341F8E"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="6D7FEC9F-FE21-F0C6-BD55-A88E354E519B" name="TB_EVENTO_CLINICO_PK">
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>A80635EB-A44E-B7B3-FBF4-DC25092754F5</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -151,20 +123,18 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-05 01:20:26 UTC</createdTime>
 <generatorID>4F17273E-5329-BC43-8DF7-435DF4C1CAFB</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="A15966B9-1435-ACA1-9DC9-24BBFFA098AE"/>
-<colUsage columnID="1D678A79-9259-870E-2625-336067052968"/>
-<colUsage columnID="48F08502-3982-AF90-2CDE-426AAD38799C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="7FF56C63-BCF5-2D98-2D93-7DEDDB1EBA7E" name="Relation_30">
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-05 01:20:26 UTC</createdTime>
 <generatorID>8DA91B9B-18EE-94ED-AE31-376CCF9FC4AB</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>

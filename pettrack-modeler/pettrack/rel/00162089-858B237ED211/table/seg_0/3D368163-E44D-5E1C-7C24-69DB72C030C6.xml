@@ -3,7 +3,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>4E76F2D5-EE9E-B2FD-82F2-7DB4BA61C903</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -12,7 +12,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>81A740BC-2A1A-C735-BBE7-8ECEDF227805</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -24,13 +24,12 @@
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>B5E278A6-B20D-4632-8655-A99C689F1F8B</generatorID>
 <notes><![CDATA[VALORES VALIDOS: 0-100 O HEALTH SCORE]]></notes>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<dataTypeScale>2</dataTypeScale>
-<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <listOfRanges>
 <rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
@@ -43,7 +42,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>56BEF3AD-FEAC-D392-521A-46F121FB9D9E</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -56,7 +55,7 @@
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>D5128E33-A0FB-8C9C-DE0B-8E0441C27C31</generatorID>
 <notes><![CDATA[CONTEXTO SCORE]]></notes>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -69,7 +68,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-05 01:20:26 UTC</createdTime>
 <generatorID>E0C3F269-036A-45A0-C6CC-678C884F499D</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -80,41 +79,13 @@
 <colAssociation fkAssociation="4A78997E-B3AE-2213-B9EE-B40F76D546C5" referredColumn="E3CAB171-DDF0-476C-8932-EBC2514804E9"/>
 </associations>
 </Column>
-<Column name="ID_TUTOR" id="4A1F2EAE-10CB-F1C2-A19E-A523CC93FEED">
-<createdBy>waidemannn_m</createdBy>
-<createdTime>2026-05-05 01:27:38 UTC</createdTime>
-<ownerDesignName>PET</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="4A78997E-B3AE-2213-B9EE-B40F76D546C5" referredColumn="85036129-CECE-BB74-AAC2-7AA64EC8C7F3"/>
-</associations>
-</Column>
-<Column name="ID_CLINICA" id="D3FC81C9-2F92-AC76-4AB5-9B2401A2FADD">
-<createdBy>waidemannn_m</createdBy>
-<createdTime>2026-05-05 01:27:38 UTC</createdTime>
-<ownerDesignName>PET</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="4A78997E-B3AE-2213-B9EE-B40F76D546C5" referredColumn="957330F0-28F9-E153-4C29-57C502341F8E"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="D6D3B04F-1B9F-D61D-0847-BAD589FE725A" name="TB_SCORE_HISTORICO_PK">
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>D7832D8B-B9AA-3D0F-1A73-1356837EABE3</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -126,13 +97,11 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-05 01:20:26 UTC</createdTime>
 <generatorID>F7FDE6ED-C3E7-E805-6618-9EE04E8B4BCF</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="E8BB8676-43DA-21DC-6BDA-3486622B515C"/>
-<colUsage columnID="4A1F2EAE-10CB-F1C2-A19E-A523CC93FEED"/>
-<colUsage columnID="D3FC81C9-2F92-AC76-4AB5-9B2401A2FADD"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

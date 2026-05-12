@@ -3,7 +3,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>87F64F35-06BE-7885-194B-7E4D1F971281</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -12,7 +12,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>F589D415-D547-4584-5C15-AF0C637957F5</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -24,7 +24,7 @@
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>46C1470C-A7A8-B839-53C2-41C4863300D3</generatorID>
 <notes><![CDATA[VALORES PERMITIDOS: ALERTA, LEMBRETE, INFO, URGENTE]]></notes>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -43,7 +43,7 @@
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>B1039352-C257-74D6-1259-EE3E458C79CE</generatorID>
 <notes><![CDATA[TITULO DO PUSH]]></notes>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -56,7 +56,7 @@
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>E820ECA2-BC1A-63B7-7399-76101DB6D3CC</generatorID>
 <notes><![CDATA[CORPO DA MENSAGEM]]></notes>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -69,7 +69,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>3B20139C-0398-2317-BEE3-9EB24EB5B650</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -82,7 +82,7 @@
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>E15D1AA6-4FF4-4A7D-63F2-E53B5B5D7436</generatorID>
 <notes><![CDATA[VALORES VALIDOS: S OU N]]></notes>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -98,7 +98,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>E481E630-E690-5190-64C7-F4BF166CEB87</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -113,7 +113,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>382EAF9D-24CB-1025-DBE9-B96FA2D67220</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -124,59 +124,25 @@
 <colAssociation fkAssociation="F14F27D9-1BA1-18EF-9E70-2BE18196C8C7" referredColumn="E3CAB171-DDF0-476C-8932-EBC2514804E9"/>
 </associations>
 </Column>
-<Column name="ID_TUTOR1" id="E3D2A278-39E6-B368-E216-8DFAF309DAEB">
-<createdBy>waidemannn_m</createdBy>
-<createdTime>2026-05-04 23:36:29 UTC</createdTime>
-<generatorID>5A709256-118D-A5B9-7D84-F6711A9EACE2</generatorID>
-<ownerDesignName>PET</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="F14F27D9-1BA1-18EF-9E70-2BE18196C8C7" referredColumn="85036129-CECE-BB74-AAC2-7AA64EC8C7F3"/>
-</associations>
-</Column>
-<Column name="ID_CLINICA" id="C88FEB06-E7CC-ADB0-69C2-CE444A93E1E8">
-<createdBy>waidemannn_m</createdBy>
-<createdTime>2026-05-04 23:36:29 UTC</createdTime>
-<generatorID>F383FD9F-8AC8-C22C-7241-7239F2AA9519</generatorID>
-<ownerDesignName>PET</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="F14F27D9-1BA1-18EF-9E70-2BE18196C8C7" referredColumn="957330F0-28F9-E153-4C29-57C502341F8E"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="F90BFA64-ABD1-49F8-70F1-2FD7E75E2DF7" name="TB_NOTIFICACAO_PK">
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>D267781F-CE33-B88D-E921-0BB94C02707E</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="6D28130D-80DA-F0D6-2256-0B55993490DC"/>
-<colUsage columnID="0E3C9ABE-C9D6-44A6-8986-E12A19B895FB"/>
-<colUsage columnID="852B825D-1565-2BB5-7CB1-A6DDCC42A909"/>
-<colUsage columnID="E3D2A278-39E6-B368-E216-8DFAF309DAEB"/>
-<colUsage columnID="C88FEB06-E7CC-ADB0-69C2-CE444A93E1E8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="63559731-9779-7F43-471D-86FFBF27D2ED" name="Relation_11">
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>3A40AF58-FD4C-7602-EF57-23AA63FB855F</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
@@ -187,13 +153,11 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>47BE47BB-FEBC-ACD3-C84F-58181E63612B</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="852B825D-1565-2BB5-7CB1-A6DDCC42A909"/>
-<colUsage columnID="E3D2A278-39E6-B368-E216-8DFAF309DAEB"/>
-<colUsage columnID="C88FEB06-E7CC-ADB0-69C2-CE444A93E1E8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

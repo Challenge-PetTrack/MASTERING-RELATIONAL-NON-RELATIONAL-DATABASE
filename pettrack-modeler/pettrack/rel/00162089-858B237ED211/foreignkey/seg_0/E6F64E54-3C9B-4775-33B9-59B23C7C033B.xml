@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E6F64E54-3C9B-4775-33B9-59B23C7C033B" containerWithKeyObject="EB891C30-52C7-4A58-8D5A-8D96D850F14C" localFKIndex="75709E28-0A08-8145-8C1F-6102D21D86B5" name="Relation_23">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-12 01:09:01 UTC</createdTime>
+<generatorID>43F0D083-0DD4-E66E-D598-ED9813903A9F</generatorID>
+<ownerDesignName>pettrack</ownerDesignName>
+<referredTableLongName>TB_TUTOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B032CF6A-EBB6-29E7-3A86-4F256A74102D</referredTableID>
+<keyObject>B91E9D31-FDE4-5998-BC56-41D0EDBC5D8F</keyObject>
+<referredKeyID>B91E9D31-FDE4-5998-BC56-41D0EDBC5D8F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_TUTOR</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

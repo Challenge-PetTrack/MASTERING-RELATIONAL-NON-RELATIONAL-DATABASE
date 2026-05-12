@@ -3,7 +3,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>50964CCD-B0AF-610F-823F-D0A38EAFF486</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
@@ -12,7 +12,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>2CF43E7E-C165-729B-AF5E-1E2B222587F4</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -24,7 +24,7 @@
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>C57C7F87-4ED9-D562-3262-440CD45AB450</generatorID>
 <notes><![CDATA[QUANDO O TUTOR CONFIRMOU]]></notes>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
@@ -36,7 +36,7 @@
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>263060C2-2CB6-1EF3-1D6B-8AE4B405336F</generatorID>
 <notes><![CDATA[VALORES PERMITIDOS: S = tomou, N = não tomou]]></notes>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
@@ -53,7 +53,7 @@
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>9CDE7668-1911-49A2-8FA5-5A4823D481BB</generatorID>
 <notes><![CDATA[MOTIVO SE NÃO TOMOU]]></notes>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -66,7 +66,7 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-05 01:20:26 UTC</createdTime>
 <generatorID>4AC5185D-8407-AD01-6FF9-3555472AE5A5</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
@@ -75,69 +75,13 @@
 <colAssociation fkAssociation="E24305F2-678B-37B0-ED67-10782BB3A6C5" referredColumn="E6496484-5DD5-2FD9-F41B-DB216EB3FC19"/>
 </associations>
 </Column>
-<Column name="ID_EVENTO" id="4B73775B-942A-ED17-750F-3861EE44CE66">
-<createdBy>waidemannn_m</createdBy>
-<createdTime>2026-05-05 01:27:38 UTC</createdTime>
-<ownerDesignName>PET</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="E24305F2-678B-37B0-ED67-10782BB3A6C5" referredColumn="5F4366AA-16DF-AAD7-89A0-E09DDE9763F4"/>
-</associations>
-</Column>
-<Column name="ID_PET" id="E69B8932-1696-438C-85A5-26B139258C68">
-<createdBy>waidemannn_m</createdBy>
-<createdTime>2026-05-05 01:27:38 UTC</createdTime>
-<ownerDesignName>PET</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="E24305F2-678B-37B0-ED67-10782BB3A6C5" referredColumn="F1AC6BA6-E4F8-CCE5-3987-69111B3A5BC8"/>
-</associations>
-</Column>
-<Column name="ID_TUTOR" id="0C745F34-C3BC-D067-3E65-F9F08D83CDB0">
-<createdBy>waidemannn_m</createdBy>
-<createdTime>2026-05-05 01:27:38 UTC</createdTime>
-<ownerDesignName>PET</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="E24305F2-678B-37B0-ED67-10782BB3A6C5" referredColumn="332D8FBA-7795-5AC8-CAAB-C5896EEFAC51"/>
-</associations>
-</Column>
-<Column name="ID_CLINICA" id="BF9EA735-2B02-1A67-AA35-207A801D7470">
-<createdBy>waidemannn_m</createdBy>
-<createdTime>2026-05-05 01:27:38 UTC</createdTime>
-<ownerDesignName>PET</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="E24305F2-678B-37B0-ED67-10782BB3A6C5" referredColumn="E5B093DB-EBBF-E35E-E86E-D2BF6B640275"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="F5B0493E-DEFE-936D-D0A5-6ABC8E291E20" name="TB_ADESAO_MEDICAMENTO_PK">
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-04 23:36:29 UTC</createdTime>
 <generatorID>8E061D40-B1CE-4D5A-6488-E1E6D751CE8D</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
@@ -149,15 +93,11 @@
 <createdBy>waidemannn_m</createdBy>
 <createdTime>2026-05-05 01:20:26 UTC</createdTime>
 <generatorID>910C1F62-A063-7777-4C35-22DBEA5438B8</generatorID>
-<ownerDesignName>PET</ownerDesignName>
+<ownerDesignName>pettrack</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="DEF31B01-CD2E-F361-214E-66B9DFA6C468"/>
-<colUsage columnID="4B73775B-942A-ED17-750F-3861EE44CE66"/>
-<colUsage columnID="E69B8932-1696-438C-85A5-26B139258C68"/>
-<colUsage columnID="0C745F34-C3BC-D067-3E65-F9F08D83CDB0"/>
-<colUsage columnID="BF9EA735-2B02-1A67-AA35-207A801D7470"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

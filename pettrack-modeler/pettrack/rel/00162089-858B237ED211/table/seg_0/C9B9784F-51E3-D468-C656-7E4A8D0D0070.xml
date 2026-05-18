@@ -67,7 +67,8 @@
 <createdTime>2026-05-05 01:20:26 UTC</createdTime>
 <generatorID>4AC5185D-8407-AD01-6FF9-3555472AE5A5</generatorID>
 <ownerDesignName>pettrack</ownerDesignName>
-<use>0</use>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>

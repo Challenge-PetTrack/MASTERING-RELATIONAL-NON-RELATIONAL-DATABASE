@@ -84,6 +84,16 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="DT_CADASTRO" id="C16BA416-7DC7-74A8-81B2-CBB32A76A098">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-12 19:33:51 UTC</createdTime>
+<ownerDesignName>pettrack</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="1DD00EAA-ABFE-4391-10E1-96FBC7F4A561" name="TB_CLINICA_PK">

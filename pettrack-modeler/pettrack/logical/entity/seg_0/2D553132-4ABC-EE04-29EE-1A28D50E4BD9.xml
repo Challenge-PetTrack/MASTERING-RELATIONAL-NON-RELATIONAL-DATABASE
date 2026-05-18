@@ -97,6 +97,18 @@
 <defaultValue>SYSDATE</defaultValue>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="DT_CADASTRO" id="AEE3C729-767E-9E76-7DC9-455F7609AFBC">
+<createdBy>waidemannn_m</createdBy>
+<createdTime>2026-05-12 19:22:09 UTC</createdTime>
+<ownerDesignName>pettrack</ownerDesignName>
+<engineerTo>
+<item key="00162089-67EE-03EC-8686-858B237ED211" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="D4266CAE-AC27-591F-075A-74514D217FD8" name="TB_CLINICA PK">

@@ -161,3 +161,235 @@ Este repositório contém a infraestrutura completa de **Banco de Dados Relacion
 4. Certifique-se de que a saída do console está habilitada:
    ```sql
    SET SERVEROUTPUT ON SIZE UNLIMITED;
+   ```
+
+---
+
+## Sprint 4 - Entrega final de Banco de Dados
+
+Esta entrega utiliza o backend existente em `../JAVA-ADVANCED/pettrack` e o mesmo
+schema Oracle da Sprint 3. A estrutura relacional aprovada foi preservada.
+Os arquivos originais SQL e PDF continuam na raiz, sem alterações.
+
+### Entregáveis e validação
+
+| Requisito | Arquivo | Validação |
+|---|---|---|
+| Modelos lógico e físico (20 pontos, com o SQL original) | `sprint4/modelos/modelos_logico_fisico_sprint4.pdf` | Dois diagramas conferidos visualmente; tabela de auditoria acrescentada à representação |
+| Codificação relacional | SQL original da Sprint 3, na raiz | DDL das 13 tabelas compartilhadas coincide com a V1 do Java; base real mantém as tabelas da disciplina |
+| Empacotamento (25 pontos) | `sprint4/sql/01_packages_pettrack.sql` | Quatro packages e trigger compilados sem erros; 12 cadastros testados com rollback |
+| Procedures chamadas pelo backend | Novas classes `PetProcedureRepository` e `PetProcedureService` no Java | Cadastro pela API e formulário; consultas e erros validados com Oracle real |
+| Dataset JSON (20 pontos) | `sprint4/dataset/pets.json` | Exportado pelo controlador Java a partir do Oracle real; 8 documentos, IDs relacionados conferidos |
+| MongoDB (25 pontos) | `sprint4/mongo/importar_dataset.js` | 8 documentos importados e conferidos campo a campo; reimportação sem duplicações |
+| Demonstração (10 pontos) | Roteiro narrado abaixo | Sequência preparada; vídeo a ser gravado e narrado pelos integrantes |
+
+O PDF atualizado conserva os dois diagramas aprovados e acrescenta a tabela
+`TB_AUDITORIA_PETTRACK` que já existia no SQL. A auditoria é uma tabela técnica
+sem FK; não foi acrescentado relacionamento à estrutura do banco.
+
+### Packages e contratos
+
+| Package | Conteúdo |
+|---|---|
+| `PKG_PETTRACK_LOG` | `PRC_INSERT_LOG_ERRO`, com transação autônoma |
+| `PKG_PETTRACK_CADASTRO` | As 12 procedures de inserção operacional da Sprint 3 |
+| `PKG_PETTRACK_CONSULTA` | Duas funções, listagem JSON e relatório manual de subtotais |
+| `PKG_PETTRACK_AUDITORIA` | Lógica do trigger `TRG_AUDITORIA_PET` |
+
+As rotinas standalone da Sprint 3 permanecem disponíveis. As implementações
+empacotadas contêm a lógica, e não apenas chamadas às rotinas standalone.
+As regras de negócio, tabelas, constraints e relacionamentos foram preservados.
+
+Na versão empacotada, cadastros não executam `COMMIT`: o chamador controla a
+transação. Erros são registrados e relançados para impedir que o Java retorne
+sucesso em uma inserção rejeitada. O log continua autônomo e a auditoria acompanha
+a transação principal. `PRC_INSERT_PET` tem um parâmetro adicional
+`P_ID_GERADO OUT`, utilizado pelo Java para consultar e devolver o registro criado.
+
+As duas procedures de consulta devolvem `CLOB` por parâmetro `OUT`. O JSON deixa
+de conter títulos e rodapés de console. A serialização continua manual, com
+escapes para aspas, barras e caracteres de controle e números independentes da
+configuração regional do Oracle. O dataset organiza tutor e clínica como
+documentos incorporados, preservando seus IDs relacionais.
+
+`FN_CALCULAR_TAXA_ADESAO` mantém seus retornos anteriores, inclusive `-1`, `0`
+e `-99` para os cenários já previstos na Sprint 3.
+
+### Preparação e execução do Oracle/backend
+
+Pré-requisitos: Java 21, conexão ao Oracle da FIAP e a base da Sprint 3 já
+existente no mesmo schema indicado em `JAVA-ADVANCED/pettrack/src/main/resources/application.properties`.
+A configuração de conexão existente é reutilizada; nenhuma senha deve ser
+incluída nos comandos, no dataset ou no vídeo.
+
+1. Abra a pasta `JAVA-ADVANCED/pettrack` no terminal e execute:
+
+   ```powershell
+   $env:JAVA_HOME = 'C:\Users\Sbrana\.jdks\ms-21.0.11'
+   .\mvnw.cmd -DskipTests package
+   # Após BUILD SUCCESS:
+   & "$env:JAVA_HOME\bin\java.exe" -jar '.\target\PetTrack-0.0.1-SNAPSHOT.jar'
+   ```
+
+   A execução pelo JAR evita a falha de codificação de `spring-boot:run` no
+   Windows quando o caminho contém `°`. A classe principal e a aplicação são
+   as mesmas. Mantenha o terminal aberto enquanto utilizar o sistema.
+
+2. O Flyway aplica a nova migração `V4__packages_pettrack.sql`, cuja codificação
+   é igual ao script `sprint4/sql/01_packages_pettrack.sql` deste repositório.
+   No ambiente validado, a V4 já foi aplicada com sucesso pelo próprio Flyway.
+   Não edite nem reaplique as migrations V1, V2 e V3.
+3. Alternativamente, o script de packages pode ser executado com F5 no SQL
+   Developer, conectado à mesma base. Ele não recria tabelas nem carga dados.
+   Não execute o script completo da Sprint 3 sobre a base atual: ele começa com
+   `DROP TABLE` e `DROP SEQUENCE`.
+4. Confira os objetos com:
+
+   ```sql
+   SELECT object_name, object_type, status
+   FROM user_objects
+   WHERE object_name LIKE 'PKG_PETTRACK_%'
+      OR object_name = 'TRG_AUDITORIA_PET'
+   ORDER BY object_name, object_type;
+
+   SELECT name, type, line, text
+   FROM user_errors
+   WHERE name LIKE 'PKG_PETTRACK_%'
+      OR name = 'TRG_AUDITORIA_PET';
+   -- Resultado esperado da segunda consulta: nenhuma linha.
+   ```
+
+### Operações existentes e demonstração de procedures
+
+Entre em `http://localhost:8080/login` com as credenciais de avaliação já
+documentadas no README do Java. Exportação e relatório exigem perfil ADMIN ou VET.
+
+| Operação | Acesso | Procedure executada |
+|---|---|---|
+| Cadastro de pet pela API | `POST /pet/novo` | `PKG_PETTRACK_CADASTRO.PRC_INSERT_PET` |
+| Cadastro de pet pelo formulário existente | `/admin/pets/novo` → salvar | A mesma procedure de cadastro |
+| Download do dataset | `GET /pet/exportar-json` | `PKG_PETTRACK_CONSULTA.PRC_LISTAR_PETS_JSON` |
+| Relatório de atividades | `GET /pet/relatorio-atividades` | `PKG_PETTRACK_CONSULTA.PRC_RELATORIO_SUBTOTAIS_MANUAL` |
+
+Edição e exclusão dos pets continuam no fluxo existente. As novas operações de
+consulta não alteram as respostas das listagens anteriores. É possível filtrar
+a exportação por espécie: `/pet/exportar-json?especie=Cao` (use a grafia dos dados
+cadastrados). Filtro com menos de dois caracteres retorna 400; filtro válido sem
+resultados devolve `[]`. A importação exige um dataset não vazio.
+
+Baixe o arquivo por `http://localhost:8080/pet/exportar-json` e coloque-o em
+`sprint4/dataset/pets.json`. Esse é o mesmo caminho do dataset entregue.
+
+### MongoDB local
+
+O servidor e o shell foram instalados em `%LOCALAPPDATA%\PetTrackMongoDB`.
+O servidor usa apenas `127.0.0.1:27017`; os dados ficam na subpasta `data`.
+Não é necessário instalar driver MongoDB no backend: a entrega usa o script
+de criação e importação no `mongosh`, mantendo o Oracle como banco do backend.
+
+Na raiz deste repositório de banco, em PowerShell:
+
+```powershell
+# Instalação reproduzível, caso ainda não exista:
+.\sprint4\mongo\mongodb_local.ps1 -Acao Instalar
+
+# Inicializar o servidor local:
+.\sprint4\mongo\mongodb_local.ps1 -Acao Iniciar
+
+$mongosh = Join-Path $env:LOCALAPPDATA 'PetTrackMongoDB/mongosh-2.13.0-win32-x64/bin/mongosh.exe'
+& $mongosh 'mongodb://127.0.0.1:27017/pettrack_sprint4' --quiet --file '.\sprint4\mongo\importar_dataset.js'
+
+# Abrir o shell para demonstrar as consultas:
+& $mongosh 'mongodb://127.0.0.1:27017/pettrack_sprint4'
+```
+
+O instalador usa MongoDB Community 8.0.34 e mongosh 2.13.0, com hashes SHA256
+conferidos contra o [manifesto oficial do MongoDB](https://downloads.mongodb.org/full.json)
+e a [release oficial do mongosh](https://github.com/mongodb-js/mongosh/releases/tag/v2.13.0).
+Os binários e os arquivos internos do servidor ficam fora do repositório.
+
+O script cria a coleção `pets`, validador documental e índices por ID do pet,
+tutor e clínica. `_id` corresponde ao ID relacional do pet. A importação usa
+upsert: repetir o mesmo dataset não duplica documentos e não apaga dados.
+Caso futuramente sejam removidos pets no Oracle, uma nova importação não exclui
+automaticamente documentos antigos do MongoDB.
+
+No shell:
+
+```javascript
+db.pets.countDocuments()
+db.pets.find({}, { _id: 0, idPet: 1, nome: 1, tutor: 1, clinica: 1 })
+db.pets.find({ 'tutor.id': 3 }) // Substitua pelo ID observado no dataset.
+db.pets.aggregate([
+  { $group: { _id: '$clinica.id', clinica: { $first: '$clinica.nome' }, pets: { $sum: 1 } } },
+  { $sort: { _id: 1 } }
+])
+```
+
+Para importar um arquivo em outro local, defina `PETTRACK_DATASET` com o caminho
+absoluto antes de executar o script. Para encerrar esta instância local, no shell:
+`db.getSiblingDB('admin').shutdownServer()`.
+
+### Testes executáveis
+
+Na pasta `JAVA-ADVANCED/pettrack`:
+
+```powershell
+# Seis testes unitários, sem banco:
+.\mvnw.cmd '-Dtest=PetProcedureServiceTest' test
+
+# Testes de integração reais; exige conexão à FIAP e packages instalados:
+$env:PETTRACK_ORACLE_TESTS = 'true'
+.\mvnw.cmd '-Dtest=PetProcedureOracleIT' test
+
+# Valida o histórico do Flyway e instala V4 se pendente:
+.\mvnw.cmd '-Dtest=PetTrackFlywayOracleIT' test
+```
+
+Foram executados **16 testes Java: 6 unitários, 9 de integração com Oracle e
+1 de migração Flyway**, todos aprovados. A suíte de integração usa o controlador,
+serviços, JDBC/JPA e Oracle reais; somente o initializer de usuários é substituído
+para evitar alterações nos usuários durante os testes. A autenticação dos testes
+usa os perfis de teste do Spring Security. Cadastros de teste têm rollback.
+
+O teste de integração pode gravar o arquivo devolvido pelo controlador quando
+recebe `-Dpettrack.dataset=<caminho-absoluto>`. Foi esse mecanismo que gerou o
+dataset real entregue, conferindo os IDs de tutor e clínica contra o Oracle.
+
+No SQL Developer, execute também `sprint4/sql/02_validacao_sprint4.sql` com F5,
+habilitando `SET SERVEROUTPUT ON`. Ele exercita os 12 cadastros, funções, consultas
+e auditoria, conferindo resultados e desfazendo seus próprios dados ao final.
+Sequences avançam normalmente; logs autônomos de erros são preservados.
+Esse script foi executado com sucesso. Os 6 pets originais permaneceram na base.
+
+### Roteiro objetivo do vídeo narrado
+
+1. **Apresentação:** mostre os modelos lógico e físico atualizados e os arquivos
+   SQL da Sprint 3 e Sprint 4. Explique que a modelagem aprovada foi reutilizada
+   e a auditoria existente foi incluída nos diagramas.
+2. **Empacotamento:** mostre os quatro packages, a spec e o body, o tratamento
+   de erros e a chamada do trigger ao package de auditoria. Execute a consulta
+   de `USER_ERRORS`, mostrando que não há erros dos objetos PetTrack.
+3. **Backend → procedure → inserção:** abra a aplicação, entre como ADMIN/VET
+   e cadastre um pet pelo formulário existente. Mostre no código o caminho
+   `AdminWebController → PetProcedureService → PetProcedureRepository → package`.
+4. **Persistência e auditoria:** no SQL Developer, consulte o registro recém-criado
+   por nome e confira `ID_PET`, `ID_TUTOR` e `ID_CLINICA`. Consulte a auditoria:
+
+   ```sql
+   SELECT id_pet, nm_pet, id_tutor, id_clinica FROM tb_pet ORDER BY id_pet DESC;
+   SELECT id_auditoria, tp_operacao, ds_valores_novos
+   FROM tb_auditoria_pettrack ORDER BY id_auditoria DESC;
+   ```
+
+5. **Consultas pelo backend:** abra `/pet/relatorio-atividades` e mostre o
+   subtotal por clínica e o total geral. Abra `/pet/exportar-json`, baixe o JSON
+   e mostre os dados e os documentos incorporados de tutor/clínica.
+6. **Oracle → JSON → MongoDB:** substitua `sprint4/dataset/pets.json` pelo
+   download atualizado, execute a importação no `mongosh` e mostre a contagem,
+   a consulta por tutor e o agrupamento por clínica. Os números devem acompanhar
+   a quantidade atual de pets exportados, inclusive o pet cadastrado no vídeo.
+7. **Conclusão:** apresente os testes e os entregáveis. Grave com narração clara;
+   confirme que todos os processos demonstrados terminaram sem erro.
+
+O vídeo deve ser executado e narrado pelos integrantes.
